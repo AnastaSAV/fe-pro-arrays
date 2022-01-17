@@ -65,10 +65,9 @@ function reduce(array, callback, initialValue) {
 */
 function some(array, callback) {
 	for (let i = 0; i < array.length; i++) {
-	if( callback(array[i], i, array)) {
-		return true;
-	}
-else false;
+		if (callback(array[i], i, array)) {
+			return true;
+		}
 	}
 }
 
@@ -80,11 +79,11 @@ else false;
 */
 function every(array, callback) {
 	for (let i = 0; i < array.length; i++) {
-		if(!callback(array[i], i, array)) {
+		if (!callback(array[i], i, array)) {
 			return false;
 		}
-	else true;
-		}
+		else return true;
+	}
 }
 
 // Эту часть не удаляем, она важна для проверки результата
