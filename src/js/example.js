@@ -1,7 +1,7 @@
 const array = [1, 2, 3];
 
-forEach(array, function (item, index, arr) {
-  console.log(item, index);
+forEach(array,function (item, index, arr) {
+		console.log(item, index);
 })
 // 1 0
 // 2 1
@@ -38,6 +38,6 @@ const everyResult = every(array, (item, index, array) => {
   return item > 2;
 });
 
-console.log(someResult); // => false
+console.log(everyResult); // => false
 
 
