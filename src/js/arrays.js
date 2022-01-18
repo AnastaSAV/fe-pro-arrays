@@ -69,6 +69,7 @@ function some(array, callback) {
 			return true;
 		}
 	}
+	return false;
 }
 
 /* Функция принимает в себе первым аргументом массив, вторым функцию которая будет вызываться для каждого элемента массива
@@ -82,8 +83,8 @@ function every(array, callback) {
 		if (!callback(array[i], i, array)) {
 			return false;
 		}
-		else return true;
 	}
+	return true;
 }
 
 // Эту часть не удаляем, она важна для проверки результата
